@@ -3,7 +3,7 @@ import { ColumnsType } from 'antd/es/table';
 import { SearchOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import type { DataRow } from '../types';
-// import AddEditModal from './AddEditModal';
+import AddEditModal from './AddEditModal';
 
 const DataTable = () => {
   const [data, setData] = useState<DataRow[]>([]);
@@ -88,7 +88,7 @@ const DataTable = () => {
         pagination={{ pageSize: 5 }}
       />
 
-      {/* <AddEditModal
+      <AddEditModal
         visible={isModalOpen}
         onCancel={() => {
           setIsModalOpen(false);
@@ -96,7 +96,7 @@ const DataTable = () => {
         }}
         onSubmit={handleAddEdit}
         initialData={editRow}
-      /> */}
+      />
     </>
   );
 };
