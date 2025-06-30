@@ -27,7 +27,7 @@
 
 ## 🧪 Скриншот
 
-![Таблица](![image](https://github.com/user-attachments/assets/b5a04c85-005c-4672-87bf-1a9a01b05013))
+![Table](https://github.com/user-attachments/assets/90a146a2-dc56-405f-8cc7-7de1461a9c93)
 
 ## 📁 Запуск проекта локально
 
