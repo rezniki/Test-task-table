@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# 📊 Test Task Table — Таблица с CRUD, сортировкой и поиском
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Интерфейс для добавления, редактирования, удаления и сортировки данных в таблице. Выполнен в рамках тестового задания.
 
-## Available Scripts
+## 🚀 Ссылка на результат
 
-In the project directory, you can run:
+▶ [Открыть демо (GitHub Pages)](https://rezniki.github.io/Test-task-table/)
 
-### `npm start`
+## 🛠 Стек технологий
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ⚛ **React + TypeScript**
+- 📦 Ant Design
+- 🧠 Хуки: `useState`, `useEffect`
+- 💾 Хранение данных в `localStorage`
+- 📂 Деплой через `gh-pages`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧩 Функциональность
 
-### `npm test`
+- ✅ Таблица с колонками: Имя / Дата / Число / Действия
+- ✅ Добавление записей через модальное окно
+- ✅ Редактирование с предзаполнением
+- ✅ Удаление с подтверждением
+- ✅ Сортировка по всем столбцам
+- ✅ Поиск по всем ячейкам
+- ✅ Данные сохраняются между сессиями (`localStorage`)
+- ✅ Деплой на GitHub Pages
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧪 Скриншот
 
-### `npm run build`
+![Таблица](![image](https://github.com/user-attachments/assets/b5a04c85-005c-4672-87bf-1a9a01b05013))
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Запуск проекта локально
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/rezniki/test-task-table.git
+cd test-task-table
+npm install
+npm start
