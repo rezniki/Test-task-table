@@ -1,12 +1,20 @@
 import { Table, Button, Input, Space, Popconfirm } from 'antd';
 import { ColumnsType } from 'antd/es/table';
 import { SearchOutlined } from '@ant-design/icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { DataRow } from '../types';
 import AddEditModal from './AddEditModal';
 
 const DataTable = () => {
-  const [data, setData] = useState<DataRow[]>([]);
+  const [data, setData] = useState<DataRow[]>(() => {
+    const stored = localStorage.getItem('table-data');
+    return stored ? JSON.parse(stored) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('table-data', JSON.stringify(data));
+  }, [data]);
+
   const [search, setSearch] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editRow, setEditRow] = useState<DataRow | null>(null);
